@@ -122,6 +122,12 @@
 
 @media only screen and (max-width:576px) {
 
+    .hero {
+        background-image: url("../images/Bitmap-media.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .hero__info {
         text-align: center;
         padding: 0;
