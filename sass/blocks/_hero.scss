@@ -70,6 +70,12 @@
 }
 
 @media only screen and (max-width:768px) {
+    
+    .hero {
+        background-image: url("../images/Bitmap.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     .hero__info {
         text-align: center;
