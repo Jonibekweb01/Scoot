@@ -1,0 +1,110 @@
+.our {
+	padding-bottom: 120px;
+}
+
+.our__title {
+	margin: 0;
+	margin-bottom: 85px;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 100%;
+	text-align: center;
+	letter-spacing: -2.14286px;
+	color: #495567;
+}
+
+.our__list {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.our__item {
+	position: relative;
+	width: 100%;
+	max-width: 350px;
+	padding-top: 288px;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		width: 240px;
+		height: 240px;
+		background-image: url('../images/our-tech.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		content: '';
+	}
+
+	&::after {
+		position: absolute;
+		top: 192px;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		width: 96px;
+		height: 96px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #fcb72b;
+		border-radius: 50%;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 117%;
+		text-align: center;
+		letter-spacing: -1.07143px;
+		color: #495567;
+		content: '01';
+	}
+
+	&:nth-child(2) {
+		&::before {
+			background-image: url('../images/our-integrity.png');
+		}
+
+		&::after {
+			content: '02';
+		}
+	}
+
+	&:nth-child(3) {
+		&::before {
+			background-image: url('../images/our-community.png');
+		}
+
+		&::after {
+			content: '03';
+		}
+	}
+}
+
+.our__item + .our__item {
+	margin-left: 30px;
+}
+
+.our__item-title {
+	margin: 0;
+	margin-top: 32px;
+	margin-bottom: 27px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 117%;
+	text-align: center;
+	letter-spacing: -1.07143px;
+	color: #495567;
+}
+
+.our__item-text {
+	margin: 0;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 167%;
+	text-align: center;
+	color: #939caa;
+}
