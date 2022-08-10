@@ -1,0 +1,75 @@
+.holder {
+    background-image: url('../images/riding-content-mask.png'), url('../images/riding-content-mask.png'), url('../images/riding-content-mask.png');
+    background-size: 445px;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 830px) calc(50% - 610px), calc(50% - 830px) calc(50% - 0px), calc(50% + 830px) calc(50% - -600px);
+}
+
+.holder__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: reverse;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.holder__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 160px;
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.holder__even {
+    margin-right: 219px;
+}
+
+.holder__even__info {
+    margin-right: 0 !important;
+}
+
+.holder__info {
+    max-width: 445px;
+    width: 100%;
+    margin-right: 219px;
+}
+
+.holder__title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+
+.holder__text {
+    margin: 0 0 40px 0;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
+
+.holder__link {
+    padding: 14px 44px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #FCB72B;
+}
