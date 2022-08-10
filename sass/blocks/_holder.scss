@@ -2,7 +2,7 @@
     background-image: url('../images/riding-content-mask.png'), url('../images/riding-content-mask.png'), url('../images/riding-content-mask.png');
     background-size: 445px;
     background-repeat: no-repeat;
-    background-position: calc(50% + 830px) calc(50% - 610px), calc(50% - 830px) calc(50% - 0px), calc(50% + 830px) calc(50% - -600px);
+    background-position: calc(50% + 810px) calc(50% - 690px), calc(50% - 820px) calc(50% - 80px), calc(50% + 820px) calc(50% + 522px);
 }
 
 .holder__list {
@@ -27,10 +27,36 @@
 
     &:nth-child(1)::after {
         position: absolute;
-        top: 0px;
-        left: 921px;
+        top: 290px;
+        left: 520px;
         display: block;
-        background-image: url('../../images/riding-content-strelka.svg');
+        background-image: url('../images/riding-content-strelka.svg');
+        background-repeat: no-repeat;
+        background-size: 735px 138px;
+        width: 735px;
+        height: 138px;
+        content: '';
+    }
+
+    &:nth-child(2)::after {
+        position: absolute;
+        top: 0px;
+        left: -550px;
+        display: block;
+        background-image: url('../images/City-strelka.png');
+        background-repeat: no-repeat;
+        background-size: 735px 138px;
+        width: 735px;
+        height: 138px;
+        content: '';
+    }
+
+    &:nth-child(3)::after {
+        position: absolute;
+        top: 90px;
+        left: 902px;
+        display: block;
+        background-image: url('../images/zer-strelka.png');
         background-repeat: no-repeat;
         background-size: 735px 138px;
         width: 735px;
@@ -82,4 +108,60 @@
     color: #FFFFFF;
     text-decoration: none;
     background: #FCB72B;
+}
+
+
+@media only screen and (max-width:768px) {
+    .holder__item {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        max-width: 311px;
+        width: 100%;
+        margin: 0 auto 120px auto;
+        text-align: center;
+    }
+
+    .holder__info {
+        margin-right: 0;
+        margin-top: 56px;
+    }
+
+    .holder__even {
+        margin-right: 0;
+    }
+
+    .holder__even__info {
+        margin-right: 0 !important;
+    }
+
+    .holder__item:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .holder__item:nth-child(1)::after {
+        display: none;
+    }
+
+    .holder__item:nth-child(2)::after {
+        display: none;
+    }
+
+    .holder__item:nth-child(3)::after {
+        display: none;
+    }
+
+    .holder__img {
+        width: 311px;
+        height: 311px;
+    }
+
+    .holder__title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .holder__text {
+        font-size: 15px;
+        line-height: 25px;
+    }
 }

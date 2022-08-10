@@ -104,4 +104,8 @@
         width: 56px;
         height: 56px;
     }
+
+    .steps__item:last-child {
+        margin-bottom: 0;
+    }
 }
