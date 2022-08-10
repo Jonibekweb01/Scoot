@@ -16,6 +16,7 @@
 }
 
 .holder__item {
+    position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 160px;
@@ -24,8 +25,17 @@
         flex-direction: row-reverse;
     }
 
-    &:last-child {
-        margin-bottom: 0;
+    &:nth-child(1)::after {
+        position: absolute;
+        top: 0px;
+        left: 921px;
+        display: block;
+        background-image: url('../../images/riding-content-strelka.svg');
+        background-repeat: no-repeat;
+        background-size: 735px 138px;
+        width: 735px;
+        height: 138px;
+        content: '';
     }
 }
 
