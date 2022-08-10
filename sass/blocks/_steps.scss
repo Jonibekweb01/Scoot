@@ -30,39 +30,10 @@
     &:last-child {
         margin-right: 0;
     }
+}
 
-    &::before {
-        display: block;
-        background-image: url('../../images/locate-item-1.svg');
-        background-size: 96px;
-        background-repeat: no-repeat;
-        width: 96px;
-        height: 96px;
-        margin-bottom: 40px;
-        content: '';
-    }
-
-    &:nth-child(2)::before {
-        display: block;
-        background-image: url('../../images/scooter-item-2.svg');
-        background-size: 96px;
-        background-repeat: no-repeat;
-        width: 96px;
-        height: 96px;
-        margin-bottom: 40px;
-        content: '';
-    }
-
-    &:nth-child(3)::before {
-        display: block;
-        background-image: url('../../images/enjoy-item-3.svg');
-        background-size: 96px;
-        background-repeat: no-repeat;
-        width: 96px;
-        height: 96px;
-        margin-bottom: 40px;
-        content: '';
-    }
+.steps__img {
+    margin-bottom: 40px;
 }
 
 .steps__title {
@@ -83,4 +54,54 @@
     font-size: 15px;
     line-height: 25px;
     color: #939CAA;
+}
+
+
+@media only screen and (max-width:768px) {
+    .steps__inner {
+        position: relative;
+        padding: 125px 0 145px 0;
+    }
+
+    .steps__inner::before {
+        display: none;
+    }
+
+    .steps__list {
+        flex-direction: column;
+    }
+
+    .steps__item {
+        max-width: 573px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .steps__img {
+        margin-bottom: 0;
+        margin-right: 80px;
+    }
+}
+
+
+@media only screen and (max-width:568px) { 
+    .steps__list {
+        text-align: center;
+    }
+
+    .steps__item {
+        flex-direction: column;
+        max-width: 311px;
+        width: 100%;
+    }
+
+    .steps__img {
+        margin-right: 0;
+        margin-bottom: 24px;
+        width: 56px;
+        height: 56px;
+    }
 }
