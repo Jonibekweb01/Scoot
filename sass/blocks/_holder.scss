@@ -109,9 +109,63 @@
     text-decoration: none;
     background: #FCB72B;
 }
-
-
 @media only screen and (max-width:768px) {
+    .holder__item {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        max-width: 573px;
+        width: 100%;
+        margin: 0 auto 120px auto;
+        text-align: center;
+    }
+
+    .holder__info {
+        margin-right: 0;
+        margin-top: 56px;
+        max-width: 100%;
+    }
+
+    .holder__even {
+        margin-right: 0;
+    }
+
+    .holder__even__info {
+        margin-right: 0 !important;
+    }
+
+    .holder__item:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .holder__item:nth-child(1)::after {
+        display: none;
+    }
+
+    .holder__item:nth-child(2)::after {
+        display: none;
+    }
+
+    .holder__item:nth-child(3)::after {
+        display: none;
+    }
+
+    .holder__img {
+        width: 445px;
+        height: 445px;
+    }
+
+    .holder__title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .holder__text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width:568px) {
     .holder__item {
         flex-direction: column;
         flex-direction: column-reverse;
