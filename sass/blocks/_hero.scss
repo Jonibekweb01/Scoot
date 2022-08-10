@@ -29,7 +29,7 @@
         display: block;
         background-image: url('../images/border-left.png');
         width: 203px;
-        
+
         height: 15px;
         background-repeat: no-repeat;
         content: "";
@@ -67,4 +67,49 @@
     background: #FCB72B;
     border: none;
     cursor: pointer;
+}
+
+@media only screen and (max-width:768px) {
+
+    .hero__info {
+        text-align: center;
+        padding: 0;
+    }
+
+    .hero__info::before {
+        display: none;
+    }
+
+    .hero__info::after {
+        position: absolute;
+        left: -135px;
+        top: 560px;
+        display: block;
+        background-image: url('../images/border-right.png');
+        width: 450px;
+        height: 149px;
+        background-repeat: no-repeat;
+        content: "";
+    }
+
+    .hero__inner {
+        max-width: 310px;
+        width: 100%;
+        padding: 137px 0 209px 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero__title {
+        margin-bottom: 24px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -1.78571px;
+    }
+
+    .hero__text {
+        margin-bottom: 34px;
+    }
 }
