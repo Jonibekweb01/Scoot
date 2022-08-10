@@ -43,3 +43,71 @@
     border: none;
     cursor: pointer;
 }
+
+.hamburger {
+    position: absolute;
+    left: 32px;
+    top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+@media only screen and (max-width:768px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:670px) {
+    .header__inner {
+        gap: 40px;
+    }
+
+    .header__btn {
+        padding: 10px 30px;
+    }
+}
+
+@media only screen and (max-width:616px) {
+    .header__inner {
+        gap: 20px;
+    }
+
+    .header__btn {
+        padding: 8px 25px;
+    }
+}
+
+@media only screen and (max-width:578px) {
+    .header__img {
+        margin: 0 auto;
+    }
+
+    .header__imgs {
+        width: 75px;
+        height: 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger>span {
+        display: block;
+        margin-bottom: 4px;
+        width: 23px;
+        height: 4px;
+        background: #fcb72b;
+    }
+
+    .header__navdiv {
+        display: none;
+    }
+}
