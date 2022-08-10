@@ -1,0 +1,86 @@
+.steps__inner {
+    padding: 160px 0 200px 0;
+
+    &::before {
+        display: block;
+        position: relative;
+        top: 60px;
+        left: -175px;
+        width: 920px;
+        height: 15px;
+        background-color: #e5ecf4;
+        z-index: -111;
+        content: "";
+    }
+}
+
+.steps__list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.steps__item {
+    max-width: 350px;
+    width: 100%;
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &::before {
+        display: block;
+        background-image: url('../../images/locate-item-1.svg');
+        background-size: 96px;
+        background-repeat: no-repeat;
+        width: 96px;
+        height: 96px;
+        margin-bottom: 40px;
+        content: '';
+    }
+
+    &:nth-child(2)::before {
+        display: block;
+        background-image: url('../../images/scooter-item-2.svg');
+        background-size: 96px;
+        background-repeat: no-repeat;
+        width: 96px;
+        height: 96px;
+        margin-bottom: 40px;
+        content: '';
+    }
+
+    &:nth-child(3)::before {
+        display: block;
+        background-image: url('../../images/enjoy-item-3.svg');
+        background-size: 96px;
+        background-repeat: no-repeat;
+        width: 96px;
+        height: 96px;
+        margin-bottom: 40px;
+        content: '';
+    }
+}
+
+.steps__title {
+    display: block;
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+}
+
+.steps__text {
+    margin: 0;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
