@@ -23,6 +23,7 @@
 
     &:nth-child(even) {
         flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
     &:nth-child(1)::after {
