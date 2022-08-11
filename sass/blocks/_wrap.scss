@@ -1,5 +1,9 @@
 .wrap {
     background: #495567;
+    background-image: url('../images/circle-1.png'), url('../images/circle-2.png'), url('../images/Mask.png');
+    background-repeat: no-repeat;
+    background-size: 347px, 347px, 173px;
+    background-position: calc(50% - 110px) calc(50% + 80px),calc(50% + 280px) calc(50% + 80px), calc(50% - -588px) calc(50% - -80px);
 }
 
 .wrap__inner {
@@ -103,6 +107,9 @@
 
 
 @media only screen and(max-width:768px) {
+    .wrap {
+        background-position: calc(50% - 410px) calc(50% + 80px),calc(50% + -40px) calc(50% + 80px), right bottom;
+    }
     .wrap__inner {
         flex-direction: column;
         align-items: center;
@@ -152,7 +159,12 @@
     }
 }
 
-@media only screen and(max-width:568px) {
+@media only screen and (max-width:568px) {
+    .wrap {
+        background-image:  url('../images/circle-2.png'), url('../images/Mask.png');
+        background-size: 347px, 173px;
+        background-position: calc(50% - 300px) bottom, right bottom;
+    }
     .wrap__inner {
         padding: 88px 0;
     }
