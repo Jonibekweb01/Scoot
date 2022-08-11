@@ -31,7 +31,7 @@
 	border-radius: 50%;
 }
 
-.about-hero__circle + .about-hero__circle {
+.about-hero__circle+.about-hero__circle {
 	margin-left: 24px;
 }
 
@@ -79,7 +79,7 @@
 		flex-direction: row-reverse;
 	}
 
-	&:nth-child(2) > .about-hero__item-content {
+	&:nth-child(2)>.about-hero__item-content {
 		margin-right: 0;
 		margin-left: 220px;
 	}
@@ -108,7 +108,7 @@
 	}
 }
 
-.about-hero__item + .about-hero__item {
+.about-hero__item+.about-hero__item {
 	margin-top: 77px;
 }
 
@@ -130,6 +130,8 @@
 
 .about-hero__item-text {
 	margin: 0;
+	font-family: 'Lexend Deca';
+	font-style: normal;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 167%;
@@ -141,11 +143,11 @@
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-	only screen and (min--moz-device-pixel-ratio: 2),
-	only screen and (-o-min-device-pixel-ratio: 2/1),
-	only screen and (min-device-pixel-ratio: 2),
-	only screen and (min-resolution: 192dpi),
-	only screen and (min-resolution: 2dppx) {
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
 	.about-hero__item {
 		&::before {
 			background-image: url('../images/about-hero-item-after@2x.png');
