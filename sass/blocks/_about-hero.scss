@@ -31,7 +31,7 @@
 	border-radius: 50%;
 }
 
-.about-hero__circle+.about-hero__circle {
+.about-hero__circle + .about-hero__circle {
 	margin-left: 24px;
 }
 
@@ -79,7 +79,7 @@
 		flex-direction: row-reverse;
 	}
 
-	&:nth-child(2)>.about-hero__item-content {
+	&:nth-child(2) > .about-hero__item-content {
 		margin-right: 0;
 		margin-left: 220px;
 	}
@@ -108,7 +108,7 @@
 	}
 }
 
-.about-hero__item+.about-hero__item {
+.about-hero__item + .about-hero__item {
 	margin-top: 77px;
 }
 
@@ -142,12 +142,249 @@
 	border-radius: 50%;
 }
 
+@media only screen and (max-width: 1300px) {
+	.about-hero__circle {
+		top: 0;
+		left: 840px;
+	}
+
+	.about-hero__list {
+		&::before {
+			top: 0;
+			right: calc(50% - 1025px);
+		}
+
+		&::after {
+			bottom: 0;
+			left: calc(50% - 1025px);
+		}
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.about-hero__circle {
+		top: 0;
+		left: 720px;
+	}
+
+	.about-hero__list {
+		&::before {
+			top: 0;
+			right: calc(50% - 980px);
+		}
+
+		&::after {
+			bottom: 0;
+			left: calc(50% - 980px);
+		}
+	}
+
+	.about-hero__item {
+		&::before {
+			bottom: calc(50% - 200px);
+			right: calc(50% - 695px);
+		}
+
+		&:nth-child(2)::before {
+			top: calc(50% - 222px);
+			left: calc(50% - 780px);
+		}
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	.about-hero__circle {
+		top: 0;
+		left: 680px;
+	}
+
+	.about-hero__list {
+		&::before {
+			display: none;
+		}
+
+		&::after {
+			display: none;
+		}
+	}
+
+	.about-hero__item {
+		&::before {
+			bottom: calc(50% - 200px);
+			right: -60px;
+		}
+
+		&:nth-child(2)::before {
+			top: calc(50% - 222px);
+			left: -40px;
+		}
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.about-hero__title {
+		margin-bottom: 216px;
+	}
+
+	.about-hero__circle {
+		top: 0;
+		left: 330px;
+	}
+
+	.about-hero__list {
+		&::before {
+			display: block;
+			top: 0;
+			right: calc(50% - 650px);
+		}
+
+		&::after {
+			display: block;
+			bottom: 240px;
+			left: calc(50% - 810px);
+		}
+	}
+
+	.about-hero__item {
+		width: 100%;
+		max-width: 688px;
+		flex-direction: column;
+		flex-direction: column-reverse;
+		align-items: center;
+
+		&:nth-child(2) {
+			flex-direction: column;
+			flex-direction: column-reverse;
+		}
+
+		&::before {
+			bottom: calc(50% - 70px);
+			right: -45px;
+		}
+
+		&:nth-child(2)::before {
+			top: calc(50% - 350px);
+			left: -135px;
+		}
+
+		&:nth-child(2) > .about-hero__item-content {
+			margin-left: 0;
+		}
+	}
+
+	.about-hero__item-content {
+		margin-right: 0;
+		margin-top: 56px;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.about-hero__circle {
+		top: 0;
+		left: 420px;
+	}
+
+	.about-hero__list {
+		&::before {
+			display: none;
+		}
+
+		&::after {
+			display: none;
+		}
+	}
+
+	.about-hero__item {
+		&::before {
+			bottom: calc(50% - 70px);
+			right: -50px;
+		}
+
+		&:nth-child(2)::before {
+			top: calc(50% - 350px);
+			left: -135px;
+		}
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	.about-hero__circle {
+		display: none;
+	}
+
+	.about-hero__item {
+		&::before {
+			bottom: calc(50% - 70px);
+			right: -100px;
+		}
+
+		&:nth-child(2)::before {
+			top: calc(50% - 350px);
+			left: -160px;
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.about-hero__title {
+		font-size: 40px;
+		margin: 0 auto;
+		margin-bottom: 216px;
+	}
+
+	.about-hero__item {
+		&::before {
+			bottom: calc(50% - 30px);
+			right: -280px;
+		}
+
+		&:nth-child(2)::before {
+			top: calc(50% - 250px);
+			left: -100px;
+		}
+	}
+
+	.about-hero__item + .about-hero__item {
+		margin-top: 90px;
+	}
+
+	.about-hero__item-img {
+		width: 311px;
+		height: 311px;
+	}
+
+	.about-hero__item-content {
+		width: 100%;
+		max-width: 420px;
+		min-width: 300px;
+	}
+
+	.about-hero__item-title {
+		font-size: 32px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.about-hero__item {
+		&::before {
+			bottom: calc(50% - 30px);
+			right: -430px;
+		}
+
+		&:nth-child(2)::before {
+			top: calc(50% - 280px);
+			left: -150px;
+		}
+	}
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
 	.about-hero__item {
 		&::before {
 			background-image: url('../images/about-hero-item-after@2x.png');
