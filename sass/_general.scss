@@ -1,25 +1,19 @@
 * {
-    -webkit-box-sizing:border-box;
-    box-sizing:border-box
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-body{
-    font-family: 'Space Mono';
-    margin:0;
-    padding:0;
-    height: 100vh;
-    overflow-x: hidden;
+body {
+	font-family: 'Space Mono';
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow-x: hidden;
 }
-img{ 
-    vertical-align:middle;
-}
-.visually-hidden{
-    position:absolute;
-    width:1px;
-    height:1px;
-    margin:-1px;
-    padding:0;
-    overflow:hidden;
-    border:0;
-    clip:rect(0 0 0 0);
+img {
+	vertical-align: middle;
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
 }
