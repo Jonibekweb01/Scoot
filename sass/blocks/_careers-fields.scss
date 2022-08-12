@@ -61,3 +61,54 @@
 		color: #fcb72b;
 	}
 }
+
+@media only screen and (max-width: 768px) {
+	.fields {
+		padding-bottom: 120px;
+	}
+
+	.fields__item {
+		width: 100%;
+		max-width: 689px;
+		padding: 34px 48px;
+	}
+
+	.fields__item + .fields__item {
+		margin-top: 16px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.fields__list {
+		margin: 0 auto;
+	}
+
+	.fields__item {
+		width: 100%;
+		max-width: 600px;
+		min-width: 280px;
+		flex-direction: column;
+		align-items: center;
+		padding: 34px;
+	}
+
+	.fields__item + .fields__item {
+		margin-top: 16px;
+	}
+
+	.fields__item-title {
+		margin-bottom: 8px;
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.fields__item-text {
+		margin-bottom: 16px;
+		text-align: center;
+	}
+
+	.fields__item-link {
+		width: 100%;
+		max-width: 240px;
+	}
+}

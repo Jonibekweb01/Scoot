@@ -42,6 +42,31 @@
 	background-color: #ffffff;
 }
 
+@media only screen and (max-width: 1400px) {
+	.careers-hero__circle-wrapper {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.careers-hero__circle-wrapper {
+		display: block;
+		right: -50px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.careers-hero__title {
+		margin: 0 auto;
+		text-align: center;
+		font-size: 40px;
+	}
+
+	.careers-hero__circle-wrapper {
+		display: none;
+	}
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 	only screen and (min--moz-device-pixel-ratio: 2),
 	only screen and (-o-min-device-pixel-ratio: 2/1),
