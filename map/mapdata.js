@@ -9,8 +9,8 @@ var simplemaps_worldmap_mapdata={
     
     //State defaults
     state_description: "State description",
-    state_color: "#E5ECF4",
-    state_hover_color: "#3B729F",
+    state_color: "#FCB72B",
+    state_hover_color: "#FCB72B",
     state_url: "http://simplemaps.com",
     border_size: 1.5,
     all_states_inactive: "no",
@@ -18,7 +18,7 @@ var simplemaps_worldmap_mapdata={
     
     //Location defaults
     location_description: "Location description",
-    location_color: "#FF0067",
+    location_color: "#FCB72B",
     location_opacity: 0.8,
     location_hover_opacity: 1,
     location_url: "",
@@ -69,7 +69,8 @@ var simplemaps_worldmap_mapdata={
     state_image_position: "",
     location_image_url: ""
   },
-  state_specific: {
+  state_specific: 
+  {
     AF: {
       name: "Afghanistan",
       hover_color: "#E5ECF4",
