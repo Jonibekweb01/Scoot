@@ -1,0 +1,54 @@
+.careers-hero {
+	padding: 72px 0;
+	background-image: url('../images/careers-bg.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+.careers-hero__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.careers-hero__title {
+	margin: 0;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 100%;
+	letter-spacing: -2.5px;
+	color: #ffffff;
+}
+
+.careers-hero__circle-wrapper {
+	position: relative;
+	right: -250px;
+}
+
+.careers-hero__circle {
+	display: inline-block;
+	width: 62px;
+	height: 62px;
+	border: 3px solid #ffffff;
+	border-radius: 50%;
+}
+
+.careers-hero__circle + .careers-hero__circle {
+	margin-left: 24px;
+}
+
+.careers-hero__circle--active {
+	background-color: #ffffff;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+	.careers-hero {
+		background-image: url('../images/careers-bg@2x.png');
+	}
+}
