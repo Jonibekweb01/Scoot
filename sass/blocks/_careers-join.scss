@@ -1,0 +1,87 @@
+.join {
+	padding: 120px 0;
+}
+
+.join__inner {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&::before {
+		position: absolute;
+		right: -150px;
+		bottom: 0;
+		width: 735px;
+		height: 150px;
+		background-image: url('../images/zer-strelka.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		content: '';
+	}
+
+	&::after {
+		position: absolute;
+		z-index: -1;
+		right: -550px;
+		bottom: 0;
+		width: 445px;
+		height: 445px;
+		background-image: url('../../images/riding-content-mask.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		content: '';
+	}
+}
+
+.join__content {
+	width: 100%;
+	max-width: 445px;
+}
+
+.join__title {
+	margin: 0;
+	margin-bottom: 24px;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 100%;
+	letter-spacing: -2.14286px;
+	color: #495567;
+}
+
+.join__text {
+	margin: 0;
+	margin-bottom: 40px;
+	font-family: 'Lexend Deca';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 167%;
+	color: #939caa;
+}
+
+.join__link {
+	display: inline-block;
+	width: 100%;
+	max-width: 180px;
+	padding: 14px;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 167%;
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	background-color: #fcb72b;
+	border: 3px solid #fcb72b;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background-color: #ffffff;
+		color: #fcb72b;
+	}
+}
+
+.join__img {
+	display: block;
+	border-radius: 50%;
+}
