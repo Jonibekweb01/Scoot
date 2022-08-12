@@ -108,3 +108,30 @@
 	text-align: center;
 	color: #939caa;
 }
+
+@media only screen and (max-width: 940px) {
+	.our__list {
+		flex-direction: column;
+	}
+
+	.our__item + .our__item {
+		margin-left: 0;
+		margin-top: 40px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.our__item {
+		width: 100%;
+		max-width: 440px;
+		min-width: 290px;
+	}
+
+	.our__item-title {
+		font-size: 24px;
+	}
+
+	.our__item-text {
+		font-size: 15px;
+	}
+}

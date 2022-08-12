@@ -335,8 +335,9 @@
 
 	.about-hero__item {
 		&::before {
+			width: 500px;
 			bottom: calc(50% - 30px);
-			right: -280px;
+			right: -60px;
 		}
 
 		&:nth-child(2)::before {
@@ -368,8 +369,9 @@
 @media only screen and (max-width: 375px) {
 	.about-hero__item {
 		&::before {
+			width: 340px;
 			bottom: calc(50% - 30px);
-			right: -430px;
+			right: -60px;
 		}
 
 		&:nth-child(2)::before {
