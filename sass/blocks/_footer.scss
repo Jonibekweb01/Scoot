@@ -28,6 +28,12 @@
         line-height: 25px;
         color: #939CAA;
         text-decoration: none;
+
+        transition: 0.2s ease;
+
+        &:hover {
+            color: #FCB72B;
+        }
     }
 }
 

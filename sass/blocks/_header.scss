@@ -30,6 +30,11 @@
 .nav__link {
     color: #939CAA;
     text-decoration: none;
+    transition: 0.2s ease;
+
+    &:hover {
+        color: #FCB72B;
+    }
 }
 
 .header__btn {
@@ -40,8 +45,15 @@
     line-height: 25px;
     text-align: center;
     color: #FFFFFF;
-    border: none;
+    border: 2px solid transparent;
     cursor: pointer;
+    transition: 0.2s ease;
+
+    &:hover {
+        color: #FCB72B;
+        background-color: transparent;
+        border: 2px solid #FCB72B;
+    }
 }
 
 .hamburger {
