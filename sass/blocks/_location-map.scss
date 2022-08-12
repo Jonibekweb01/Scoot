@@ -1,0 +1,112 @@
+.location-map {
+    padding: 120px 0;
+}
+
+.map {
+    margin-bottom: 120px;
+}
+
+.location-map__inner {
+    display: flex;
+    align-items: center;
+}
+
+.location-map__title {
+    margin: 0 50px 0 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+
+.location-map__text {
+    margin: 0 105px 0 0;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
+
+.location-map__message {
+    padding: 14px 44px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FCB72B;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width:768px) {
+    .location-map {
+        padding: 144px 0 120px 0;
+    }
+
+    .location-map__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .location-map__title {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .location-map__text {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width:568px) {
+    .location-map {
+        padding: 72px 0;
+    }
+
+    .location-map__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .location-map__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 72px;
+
+        &>span {
+            margin-bottom: 16px;
+            padding: 22px 100px;
+            width: 100%;
+            background: rgba(252, 183, 43, 0.15);
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: -1.07143px;
+            color: #495567;
+        }
+    }
+
+    .location-map__title {
+        margin-right: 0;
+        margin-bottom: 32px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .location-map__text {
+        margin-right: 0;
+        margin-bottom: 32px;
+        font-size: 15px;
+        line-height: 25px;
+        /* or 167% */
+    }
+}
